@@ -1,0 +1,32 @@
+{
+  "apiKey": 9000,
+  "type": "response",
+  "name": "FooResponse",
+  "validVersions": "0-9",
+  "flexibleVersions": "9+",
+  "fields": [
+    {
+       "name": "UserAgent", 
+       "type": "string", 
+       "tag": 0, 
+       "taggedVersions": "9+",
+        "about": "The user-agent that sent this request.",
+       "name": "Foos", 
+       "type": "[]Foo", 
+       "versions": "0+",
+       "about": "Each foo.", 
+       "fields": [{
+       "name": "Bar", 
+       "type": "string", 
+       "tag": 0, 
+       "taggedVersions": "9+"
+       }],
+     "default": 
+          "hello world", 
+          "about": "The bar associated with this foo, if any.",
+          "name": "Baz", 
+          "type": "int16", 
+          "versions": "0+",
+          "about": "The baz associated with this foo."
+    }]
+}
